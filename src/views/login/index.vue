@@ -56,8 +56,8 @@ export default {
     return {
       loginForm: [
         {
-          username: 'jdbc',
-          password: '123123'
+          username: 'admin',
+          password: '111111'
         }
         // { username: 'wangziyi', password: '111111' }
       ],

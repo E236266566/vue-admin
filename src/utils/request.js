@@ -13,12 +13,13 @@ const service = axios.create({
 // request interceptor
 service.interceptors.request.use(
   config => {
+    // NProgress.start()
     // do something before request is sent
-
     if (store.getters.token) {
       // let each request carry token
       // ['X-Token'] is a custom headers key
       // please modify it according to the actual situation
+      // NProgress.start()
       config.headers['Token'] = getToken()
     }
     return config
@@ -44,7 +45,7 @@ service.interceptors.response.use(
    */
   response => {
     const res = response.data
-
+    // NProgress.done()
     // if the custom code is not 20000, it is judged as an error.
     if (res.code !== 20000 && res.code !== 200) {
       Message({

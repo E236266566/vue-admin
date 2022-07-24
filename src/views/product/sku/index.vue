@@ -35,7 +35,8 @@
     </el-table>
 
     <!-- 分页  -->
-    <el-pagination background :page-size="limit" :page-count="pages" :page-sizes="[10, 20, 30, 40]" :total="total" prev-text="上一页" next-text="下一页" @size-change="sizeChange" @current-change="getSkuList" :current-page.sync="page" layout="prev, pager,next,jumper, ->,total,sizes"> </el-pagination>
+    el-p
+    <el-pagination background :page-size="limit" :page-count="pages" :page-sizes="[10, 20, 30, 40]" :total="total" prev-text="上一页" next-text="下一页" @size-change="sizeChange" @current-change="getSkuList" :current-page.sync="page" layout="prev, pager,next,->,jumper,total,sizes"> </el-pagination>
     <!-- sku详情抽屉 -->
     <el-drawer title="SKU详情" :visible.sync="skuInfoVisiable" direction="rtl" size="500px" @close="skuInfoClose" :destroy-on-close="true" :wrapperClosable="true" v-loading="skuLoading">
       <!-- 内容 -->

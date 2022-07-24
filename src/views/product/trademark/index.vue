@@ -13,7 +13,7 @@
     </el-row >
     <!-- 表格 -->
     <el-skeleton style="width:100%" :loading="loading" animated :count="11">
-    <el-table :data="tradeList" border stripe height="calc(100vh - 190px)" style="width: 100%"
+    <el-table :data="tradeList" border stripe height="calc(100vh - 190px)" style="width: 100%">
     :header-cell-style="{textAlign: 'center'}"
     :cell-style="{textAlign:'center'}"
     >
